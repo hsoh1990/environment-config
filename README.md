@@ -9,7 +9,7 @@ brew install tmux
 ## clone config file
 ```bash
 git clone https://github.com/hsoh1990/environment-config.git 
-cp -R pc-config/* ~/.config/
+cp -R environment-config/* ~/.config/
 ```
 
 ## Packer install
