@@ -33,7 +33,6 @@ npm install -g @tailwindcss/language-server
 npm install -g diagnostic-languageserver
 ```
 
-
 ## hotkey 
 ```
 ss         ## split window h
@@ -45,4 +44,11 @@ F1         ## file tree toggle
 <C-t> + ?  ## tmux action
 
 todo...
+```
+
+## nerd-font
+```
+git clone https://github.com/ryanoasis/nerd-fonts
+cd nerd-fonts
+sudo ./install.sh
 ```
