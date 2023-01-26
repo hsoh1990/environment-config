@@ -33,19 +33,6 @@ npm install -g @tailwindcss/language-server
 npm install -g diagnostic-languageserver
 ```
 
-## hotkey 
-```
-ss         ## split window h
-sv         ## split window v
-s+ hjkl    ## move window
-sf         ## finder
-F1         ## file tree toggle
-
-<C-t> + ?  ## tmux action
-
-todo...
-```
-
 ## nerd-font ubuntu
 ```
 git clone https://github.com/ryanoasis/nerd-fonts
@@ -62,4 +49,20 @@ brew install --cask font-hack-nerd-font
 ## nerd-fort Mac curl
 ```
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+```
+
+## hotkey 
+```
+ss         ## split window horizontal
+sv         ## split window vertical
+s+ hjkl    ## move window
+sf         ## finder
+F1         ## file tree toggle
+
+<C-t> + ?  ## tmux action
+  %          ## split window vertical
+  "          ## split window vertical
+  hjkl       ## move window
+  <C-hjkl>   ## resize window
+todo...
 ```
