@@ -1,4 +1,4 @@
-# pc-config
+# pc environment config
 
 ## NeoVim & tmux install
 ```bash
