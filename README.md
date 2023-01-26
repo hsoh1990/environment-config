@@ -46,9 +46,20 @@ F1         ## file tree toggle
 todo...
 ```
 
-## nerd-font
+## nerd-font ubuntu
 ```
 git clone https://github.com/ryanoasis/nerd-fonts
 cd nerd-fonts
 sudo ./install.sh
+```
+
+## nerd-font Mac brew
+```
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font 
+```
+
+## nerd-fort Mac curl
+```
+cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
