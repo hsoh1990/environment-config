@@ -32,3 +32,17 @@ npm install -g typescript-language-server typescript
 npm install -g @tailwindcss/language-server
 npm install -g diagnostic-languageserver
 ```
+
+
+## hotkey 
+```
+ss         ## split window h
+sv         ## split window v
+s+ hjkl    ## move window
+sf         ## finder
+F1         ## file tree toggle
+
+<C-t> + ?  ## tmux action
+
+todo...
+```
