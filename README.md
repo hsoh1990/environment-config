@@ -6,7 +6,7 @@ brew install neovim
 brew install tmux
 ```
 
-## clone
+## clone config file
 ```bash
 git clone https://github.com/hsoh1990/pc-config.git 
 cp -R pc-config/* ~/.config/
