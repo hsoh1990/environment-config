@@ -8,8 +8,8 @@ brew install tmux
 
 ## clone config file
 ```bash
-git clone https://github.com/hsoh1990/pc-config.git 
-cp -R pc-config/* ~/.config/
+git clone https://github.com/hsoh1990/environment-config.git 
+cp -R environment-config/* ~/.config/
 ```
 
 ## Packer install
@@ -33,16 +33,36 @@ npm install -g @tailwindcss/language-server
 npm install -g diagnostic-languageserver
 ```
 
+## nerd-font ubuntu
+```
+git clone https://github.com/ryanoasis/nerd-fonts
+cd nerd-fonts
+sudo ./install.sh
+```
+
+## nerd-font Mac brew
+```
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font 
+```
+
+## nerd-fort Mac curl
+```
+cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+```
 
 ## hotkey 
 ```
-ss         ## split window h
-sv         ## split window v
+ss         ## split window horizontal
+sv         ## split window vertical
 s+ hjkl    ## move window
 sf         ## finder
 F1         ## file tree toggle
 
 <C-t> + ?  ## tmux action
-
+  %          ## split window vertical
+  "          ## split window vertical
+  hjkl       ## move window
+  <C-hjkl>   ## resize window
 todo...
 ```
