@@ -1,9 +1,9 @@
 local builtin = require('telescope.builtin')
 local extensions = require("telescope").extensions
 
-vim.keymap.set('n', '<leader>f', builtin.find_files, {})
-vim.keymap.set('n', '<leader>g', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>t', extensions.live_grep_args.live_grep_args, { noremap = true })
+vim.keymap.set('n', '<leader>sf', builtin.find_files, {})
+vim.keymap.set('n', '<leader>sg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>st', extensions.live_grep_args.live_grep_args, { noremap = true })
 
 local actions = require('telescope.actions')
 require('nvim-web-devicons').setup({
