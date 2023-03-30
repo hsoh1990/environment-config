@@ -1,15 +1,19 @@
 require('base')
-require('highlights')
 require('maps')
 require('plugins')
-
-local has = vim.fn.has
-local is_mac = has "macunix"
-local is_win = has "win32"
-
-if is_mac then
-	require('macos')
-end
-if is_win then
-	require('windows')
-end
+require('p-mason')
+require('p-null')
+require('p-lsp')
+require('p-lspsaga')
+require('p-tree')
+require('color')
+require('text')
+require('p-lualine')
+require('p-telescope')
+require('p-bookmark')
+require('p-lspkind')
+require('p-cmp')
+require('p-snip')
+require('p-treesitter')
+require('style')
+require('other')
