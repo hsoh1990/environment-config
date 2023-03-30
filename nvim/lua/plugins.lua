@@ -75,4 +75,8 @@ return require('packer').startup(function(use)
     "glepnir/lspsaga.nvim",
     branch = "main",
   })
+  use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
+  use { 'neoclide/coc.nvim', branch = 'master', run = 'yarn install --frozen-lockfile' }
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
 end)
