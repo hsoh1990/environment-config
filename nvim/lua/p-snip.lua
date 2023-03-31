@@ -35,4 +35,15 @@ ls.add_snippets('typescriptreact', {
     end, { 1 }),
     t('(){return null}'),
   }),
+  s('rsc', {
+    t({ 'import React from \'react\';', '' }),
+    t({ '', 'const ' }),
+    i(1),
+    t({ ' = () => {', '' }),
+    t({ '  return (', '' }),
+    t({ '    <div></div>', '' }),
+    t({ ')};', '' }),
+    t('export default '),
+    i(1)
+  })
 })

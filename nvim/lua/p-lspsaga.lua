@@ -18,4 +18,5 @@ keymap("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>")
 keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
 keymap("n", "<leader>rn", "<cmd>Lspsaga rename<CR>")
 
--- keymap("n", "<leader>o", "<cmd>Lspsaga outline<CR>")
+keymap("n", "<leader>d", "<cmd>Telescope lsp_document_symbols<cr>")
+-- keymap("n", "<leader>o", "<cmt>Lspsaga outline<CR>")
