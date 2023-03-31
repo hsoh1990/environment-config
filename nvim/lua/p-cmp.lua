@@ -10,18 +10,22 @@ cmp.setup({
   },
   mapping = cmp.mapping.preset.insert({
     ['<C-Space>'] = cmp.mapping.complete(),
+    ['<Tab>'] = cmp.mapping.select_next_item(),
+    ['<C-j>'] = cmp.mapping.select_next_item(),
+    ['<S-Tab>'] = cmp.mapping.select_prev_item(),
+    ['<C-k>'] = cmp.mapping.select_prev_item(),
     ['<C-c>'] = cmp.mapping.abort(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-    ['<c-d>'] = cmp.mapping(function(fallback)
-      if luasnip.jumpable(1) then
-        luasnip.jump(1)
+    ['<C-d>'] = cmp.mapping(function(fallback)
+      if luasnip.jumpable(2) then
+        luasnip.jump(2)
       else
         fallback()
       end
     end, { "i", "s" }),
-    ['<c-b>'] = cmp.mapping(function(fallback)
-      if luasnip.jumpable(-1) then
-        luasnip.jump(-1)
+    ['<C-b>'] = cmp.mapping(function(fallback)
+      if luasnip.jumpable(0) then
+        luasnip.jump(0)
       else
         fallback()
       end

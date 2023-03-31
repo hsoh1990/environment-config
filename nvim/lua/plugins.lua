@@ -57,6 +57,7 @@ return require('packer').startup(function(use)
   use 'jose-elias-alvarez/typescript.nvim'
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'nvim-treesitter/nvim-treesitter'
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'windwp/nvim-ts-autotag'
   use 'p00f/nvim-ts-rainbow'
   use 'axelvc/template-string.nvim'
@@ -72,11 +73,16 @@ return require('packer').startup(function(use)
   use('f-person/git-blame.nvim')
   use('github/copilot.vim')
   use({
+    "folke/noice.nvim",
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    }
+  })
+  use({
     "glepnir/lspsaga.nvim",
     branch = "main",
   })
   use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
   use { 'neoclide/coc.nvim', branch = 'master', run = 'yarn install --frozen-lockfile' }
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
 end)

@@ -20,8 +20,8 @@ require('telescope').setup {
         ["<C-d>"] = actions.preview_scrolling_down,
         ["<C-j>"] = actions.move_selection_next,
         ["<C-k>"] = actions.move_selection_previous,
-        ["<C-n>"] = actions.cycle_history_next,
-        ["<C-p>"] = actions.cycle_history_prev,
+        ["<C-l>"] = actions.cycle_history_next,
+        ["<C-h>"] = actions.cycle_history_prev,
       }
     }
   },
