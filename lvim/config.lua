@@ -1,7 +1,7 @@
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save.enabled = true
-lvim.colorscheme = "habamax"
+lvim.colorscheme = "everforest"
 lvim.use_icons = true
 lvim.leader = "space"
 

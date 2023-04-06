@@ -1,5 +1,20 @@
 require 'nvim-treesitter.configs'.setup {
-  ensure_installed = { "tsx", "lua", "rust", "json", "graphql", "regex", "vim", "markdown", "markdown_inline" },
+  ensure_installed = {
+    "tsx",
+    "javascript",
+    "css",
+    "lua",
+    "rust",
+    "json",
+    "graphql",
+    "regex",
+    "vim",
+    "markdown",
+    "markdown_inline",
+    "bash",
+    "java",
+    "yaml"
+  },
 
   sync_install = false,
   auto_install = true,
