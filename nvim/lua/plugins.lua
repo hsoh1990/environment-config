@@ -85,4 +85,7 @@ return require('packer').startup(function(use)
   })
   use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
   use { 'neoclide/coc.nvim', branch = 'master', run = 'yarn install --frozen-lockfile' }
+  -- use 'mfussenegger/nvim-dap'
+  -- use 'mfussenegger/nvim-jdtls'
+  -- use 'nvim-lua/plenary.nvim'
 end)

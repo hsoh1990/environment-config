@@ -4,7 +4,7 @@ vim.g.loaded_netrwPlugin = 1
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   actions = {
-    open_file = { quit_on_open = true }
+    open_file = { quit_on_open = false }
   },
   update_focused_file = {
     enable = true,

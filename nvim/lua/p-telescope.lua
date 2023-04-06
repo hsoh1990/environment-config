@@ -23,7 +23,7 @@ require('telescope').setup {
         ["<C-l>"] = actions.cycle_history_next,
         ["<C-h>"] = actions.cycle_history_prev,
       }
-    }
+    },
   },
   layout_config = {
     horizontal = {
