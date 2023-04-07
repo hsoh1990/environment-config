@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
-    <libraryInfo home="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home" version="11.0.16.1"/>
+    <libraryInfo home="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home" version="11.0.16"/>
+    <libraryInfo home="/usr/local/Cellar/openjdk/18.0.2/libexec/openjdk.jdk/Contents/Home" version="18.0.2"/>
     <libraryInfo home="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home" version="1.8.0_345">
         <bootpath>
             <entry path="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/resources.jar"/>

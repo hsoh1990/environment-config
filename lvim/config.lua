@@ -60,8 +60,8 @@ lvim.builtin.treesitter.highlight.enable = true
 
 -- todo
 -- Change theme settings
--- lvim.builtin.theme.options.dim_inactive = true
--- lvim.builtin.theme.storm.options.style = "storm"
+lvim.builtin.theme.options.dim_inactive = true
+lvim.builtin.theme.storm.options.style = "storm"
 
 -- Use which-key to add extra bindings with the leader-key prefix
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
