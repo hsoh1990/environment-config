@@ -1,22 +1,10 @@
-require('base')
-require('maps')
-require('plugins')
-require('p-mason')
-require('p-null')
-require('p-lsp')
-require('p-lspsaga')
-require('p-tree')
-require('color')
-require('text')
-require('p-lualine')
-require('p-telescope')
-require('p-bookmark')
-require('p-lspkind')
-require('p-cmp')
-require('p-snip')
-require('p-comment')
-require('p-treesitter')
-require('p-term')
-require('p-copilot')
-require('p-ufo')
-require('style')
+if vim.loader then
+	vim.loader.enable()
+end
+
+_G.dd = function(...)
+	require("util.debug").dump(...)
+end
+vim.print = _G.dd
+
+require("config.lazy")
