@@ -12,13 +12,8 @@ git clone https://github.com/hsoh1990/environment-config.git
 cp -R environment-config/* ~/.config/
 ```
 
-## Packer install
+## Use Lazy
 ```bash
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
- 
-nvim ##after NeoVim run
-:PackerInstall
 ```
 
 ## etc
@@ -57,12 +52,14 @@ ss         ## split window horizontal
 sv         ## split window vertical
 s+ hjkl    ## move window
 sf         ## finder
-F1         ## file tree toggle
+<leader>f  ## find file 
+<leader>g  ## live grep
+dw         ## delete back work
+...
 
 <C-t> + ?  ## tmux action
   %          ## split window vertical
   "          ## split window vertical
   hjkl       ## move window
   <C-hjkl>   ## resize window
-todo...
 ```
