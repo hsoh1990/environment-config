@@ -14,10 +14,10 @@ return {
         html = { 'prettierd' },
         json = { 'prettierd' },
         yaml = { 'prettierd' },
-        markdown = { 'prettierd' },
-        graphql = { 'prettierd' },
       },
+
       format_on_save = {
+        pattern = '.lua,*.css,*.html,*.json,*.yaml,*.md',
         timeout_ms = 500,
         async = false,
         lsp_fallback = true,

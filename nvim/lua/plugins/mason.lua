@@ -22,8 +22,6 @@ return {
         'stylua',
         'eslint_d',
         'prettierd',
-        'rust-analyzer',
-        'graphql-language-service-cli',
         'prisma-language-server',
       },
     }
