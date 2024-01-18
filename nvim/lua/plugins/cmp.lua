@@ -33,6 +33,9 @@ return {
         end,
       },
       mapping = cmp.mapping.preset.insert {
+        ['<Tab>'] = cmp.mapping.select_next_item(), -- 아래로 이동
+        ['<S-Tab>'] = cmp.mapping.select_prev_item(), -- 위로 이동
+
         ['<C-Space>'] = cmp.mapping.complete(),
         ['<CR>'] = cmp.mapping.confirm { select = true }, -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
       },

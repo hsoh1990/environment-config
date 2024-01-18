@@ -1,5 +1,7 @@
 local opt = vim.opt
 opt.signcolumn = 'yes'
+
+-- set num
 opt.number = true
 opt.relativenumber = true
 
@@ -23,9 +25,6 @@ opt.smartcase = true
 opt.swapfile = false
 opt.autoread = true
 vim.bo.autoread = true
-
-opt.cursorline = true
-opt.termguicolors = true
 
 -- highlight on yank
 vim.api.nvim_create_autocmd('TextYankPost', {

@@ -7,7 +7,7 @@ return {
       float_opts = {
         border = 'curved',
         width = 130,
-        height = 30,
+        height = 50,
       },
     }
   end,

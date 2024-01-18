@@ -1,67 +1,55 @@
 return {
-	{ "nvim-treesitter/playground", cmd = "TSPlaygroundToggle" },
+  {
+    'nvim-treesitter/nvim-treesitter',
+    event = { 'BufReadPre', 'BufNewFile' },
+    build = ':TSUpdate',
+    dependencies = {
+      'windwp/nvim-ts-autotag',
+      'axelvc/template-string.nvim',
+    },
+    config = function()
+      require('nvim-treesitter.configs').setup {
+        ensure_installed = {
+          'tsx',
+          'lua',
+          'vim',
+          'typescript',
+          'javascript',
+          'html',
+          'css',
+          'json',
+          'graphql',
+          'regex',
+          'rust',
+          'prisma',
+          'markdown',
+          'markdown_inline',
+        },
 
-	{
-		"nvim-treesitter/nvim-treesitter",
-		opts = {
-			ensure_installed = {
-				"astro",
-				"cmake",
-				"cpp",
-				"css",
-				"fish",
-				"gitignore",
-				"go",
-				"graphql",
-				"http",
-				"java",
-				"php",
-				"rust",
-				"scss",
-				"sql",
-				"svelte",
-			},
+        sync_install = false,
 
-			-- matchup = {
-			-- 	enable = true,
-			-- },
+        auto_install = true,
 
-			-- https://github.com/nvim-treesitter/playground#query-linter
-			query_linter = {
-				enable = true,
-				use_virtual_text = true,
-				lint_events = { "BufWrite", "CursorHold" },
-			},
+        highlight = {
+          enable = true,
 
-			playground = {
-				enable = true,
-				disable = {},
-				updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
-				persist_queries = true, -- Whether the query persists across vim sessions
-				keybindings = {
-					toggle_query_editor = "o",
-					toggle_hl_groups = "i",
-					toggle_injected_languages = "t",
-					toggle_anonymous_nodes = "a",
-					toggle_language_display = "I",
-					focus_language = "f",
-					unfocus_language = "F",
-					update = "R",
-					goto_node = "<cr>",
-					show_help = "?",
-				},
-			},
-		},
-		config = function(_, opts)
-			require("nvim-treesitter.configs").setup(opts)
+          additional_vim_regex_highlighting = false,
+        },
+        autotag = {
+          enable = true,
+        },
+        incremental_selection = {
+          enable = true,
+          keymaps = {
+            init_selection = '<enter>',
+            node_incremental = '<enter>',
+            scope_incremental = false,
+            node_decremental = '<bs>',
+          },
+        },
+      }
 
-			-- MDX
-			vim.filetype.add({
-				extension = {
-					mdx = "mdx",
-				},
-			})
-			vim.treesitter.language.register("markdown", "mdx")
-		end,
-	},
+      require('template-string').setup {}
+    end,
+  },
 }
