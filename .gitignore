@@ -10,6 +10,6 @@ git
 htop
 jgit
 
-# yarn 전역 설치 패키지 (config만 추적, node_modules 제외)
+# yarn 전역 설치 디렉토리 (추적 안 함)
 node_modules/
-yarn/global/node_modules/
+yarn/
