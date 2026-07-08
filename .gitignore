@@ -1,15 +1,8 @@
-coc
-github-copilot
-iterm2
-flutter
-configstore
-gcloud
-gh
-ghostty
-git
-htop
-jgit
+# 기본: 모든 최상위 항목 무시
+/*
 
-# yarn 전역 설치 디렉토리 (추적 안 함)
-node_modules/
-yarn/
+# 추적할 항목만 예외로 허용
+!/nvim/
+!/tmux/
+!/.gitignore
+!/README.md
