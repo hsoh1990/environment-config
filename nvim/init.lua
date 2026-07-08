@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 
 if not vim.loop.fs_stat(lazypath) then
@@ -18,3 +19,7 @@ require 'base'
 require 'keymap'
 require('lazy').setup 'plugins'
 -- require('mini.indentscope').setup()
+=======
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
+>>>>>>> f4928e3 (파일 정리)
