@@ -28,9 +28,11 @@ nvim
 # VSCode를 한 번도 안 열었으면 User 폴더가 없을 수 있으므로 먼저 생성
 mkdir -p "$HOME/Library/Application Support/Code/User"
 
-# 저장소의 settings.json을 실제 경로에 심링크로 연결 (-f: 기존 파일 덮어씀)
+# 저장소의 settings.json / keybindings.json을 실제 경로에 심링크로 연결 (-f: 기존 파일 덮어씀)
 ln -sf ~/.config/vscode/settings.json \
   "$HOME/Library/Application Support/Code/User/settings.json"
+ln -sf ~/.config/vscode/keybindings.json \
+  "$HOME/Library/Application Support/Code/User/keybindings.json"
 ```
 
 ## etc

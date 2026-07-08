@@ -134,6 +134,9 @@
   "extensions.ignoreRecommendations": true,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }, // 확장 추천 알림 끔
 
   // "terminal.integrated.defaultLocation": "editor"     // 터미널 위치를 하단 패널 대신 에디터 영역으로

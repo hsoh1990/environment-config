@@ -1,0 +1,104 @@
+// Place your key bindings in this file to override the defaults
+[
+  // ─── Cmd+E: 어디서든 탐색기 토글 (insert 모드/터미널 등 Neovim이 못 받는 상황용 백업) ───
+  {
+    "key": "cmd+e",
+    "command": "workbench.view.explorer",
+    "when": "!sideBarVisible || activeViewlet != 'workbench.view.explorer'"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "sideBarVisible && activeViewlet == 'workbench.view.explorer'"
+  },
+
+  // ─── 탐색기 안: Vim 스타일 이동 ───
+  // j/k: 위아래 이동
+  {
+    "key": "j",
+    "command": "list.focusDown",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "k",
+    "command": "list.focusUp",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // h: 폴더 접기 (열린 폴더면 닫고, 닫힌 상태면 부모로 이동)
+  {
+    "key": "h",
+    "command": "list.collapse",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // l: 폴더 펼치기 / 파일이면 열기
+  {
+    "key": "l",
+    "command": "list.select",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // g g: 목록 맨 위로, Shift+G: 맨 아래로 (Vim의 gg/G)
+  {
+    "key": "g g",
+    "command": "list.focusFirst",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+g",
+    "command": "list.focusLast",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+
+  // ─── 탐색기 안: 파일 조작 ───
+  // a: 새 파일 (LazyVim neo-tree와 동일 키)
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // shift+a: 새 폴더
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // r: 이름 변경
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // d: 삭제
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+
+  // ─── 탐색기 안: 닫기/복귀 ───
+  // space e: 사이드바 닫기 (에디터의 <leader>e와 짝)
+  {
+    "key": "space e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // Esc: 에디터로 포커스 복귀 (닫지는 않음)
+  {
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+
+  // ─── 패널 간 이동 (Ctrl+hjkl 왕복 완성) ───
+  // 사이드바 → 에디터
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "sideBarFocus"
+  },
+  // 터미널 → 에디터 (터미널은 아래에 있으니 위 방향 = k)
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  }
+]
