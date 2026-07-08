@@ -14,6 +14,20 @@ cp -R environment-config/* ~/.config/
 
 ## Use Lazy
 ```bash
+# init.lua가 첫 실행 시 lazy.nvim을 자동 설치(bootstrap)함
+# nvim을 열면 플러그인이 자동으로 설치됨
+nvim
+
+# 이후 플러그인 관리
+:Lazy         # 상태 확인 UI
+:Lazy sync    # 설치/업데이트/정리
+```
+
+## VSCode settings (symlink)
+```bash
+# 저장소의 settings.json을 실제 경로에 심링크로 연결
+ln -sf ~/.config/vscode/settings.json \
+  "$HOME/Library/Application Support/Code/User/settings.json"
 ```
 
 ## etc

@@ -4,5 +4,6 @@
 # 추적할 항목만 예외로 허용
 !/nvim/
 !/tmux/
+!/vscode/
 !/.gitignore
 !/README.md

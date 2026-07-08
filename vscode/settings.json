@@ -1,0 +1,141 @@
+{
+  // ─── 에디터 ───
+  "editor.fontFamily": "Dank Mono",                   // 에디터 폰트 패밀리
+  "editor.fontSize": 14,                              // 에디터 폰트 크기
+  "editor.minimap.enabled": false,                    // 우측 미니맵 숨김
+  "editor.tokenColorCustomizations": {                // 토큰 색상 커스터마이징
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  // "editor.stickyScroll.enabled": false,               // 스크롤 시 상위 폴더가 상단에 붙는 기능 끔 (트리와 중복)
+  // "editor.colorDecorators": false,                    // CSS 색상 코드(#fff, rgb(), hsl() 등) 위에 색상 미리보기 점 표시 끔
+  // "editor.codeLens": false,                           // 코드 렌즈 끔 (함수/클래스 위에 참조 수, 테스트 상태 표시)
+  "editor.links": false,                              // 에디터 내 링크 클릭 비활성화 (Cmd+클릭으로 정의로 이동 방지)
+  "editor.matchBrackets": "never",                    // 괄호/중괄호/대괄호 강조 표시 끔
+  "editor.parameterHints.enabled": false,             // 함수/메서드 호출 시 매개변수 힌트 끔 -> 단축키 Cmd+Shift+Space로 필요할 때만 표시 가능
+  "editor.lightbulb.enabled": "off",                  // 코드 액션(전구) 끔 -> 단축키 Cmd+.로 필요할 때만 표시 가능
+  "editor.hover.enabled": "off",                      // 마우스 오버 시 툴팁 끔 -> 단축키 Cmd+K Cmd+I로 필요할 때만 표시 가능
+  "editor.lineNumbers": "relative",                   // 상대 줄 번호 표시 (현재 커서 위치 기준으로 위/아래 몇 번째 줄인지 표시)
+  "editor.tabSize": 2,                                // 탭 폭 2칸
+  "editor.detectIndentation": false,                  // 파일별 탭 폭 자동 감지 끔 (탭 폭 2칸 고정)
+  // "editor.showFoldingControls": "never",              // 코드 접기 아이콘(▸) 숨김 ->
+  // "editor.guides.indentation": false,                 // 들여쓰기 가이드선 숨김
+  "editor.renderWhitespace": "none",                  // 공백 문자(스페이스, 탭) 표시 끔
+  "editor.renderLineHighlight": "none",               // 현재 커서 줄 강조 표시 끔
+  "editor.occurrencesHighlight": "off",               // 커서 위치 단어와 동일한 단어 강조 표시 끔
+  "editor.selectionHighlight": false,                 // 선택 영역과 동일한 단어 강조 표시 끔
+
+  "editor.scrollbar.horizontal": "hidden",            // 에디터 가로 스크롤바 숨김
+  "editor.scrollbar.vertical": "hidden",              // 에디터 세로 스크롤바 숨김
+  "editor.overviewRulerBorder": false,                // 에디터 우측 미니맵 경계선 숨김
+  "editor.hideCursorInOverviewRuler": true,           // 에디터 우측 미니맵에서 커서 위치 표시 끔
+
+  "editor.quickSuggestions": {                        // 에디터 자동완성(자동 제안) 끔
+    "other": "off"
+  },
+  // "editor.suggestOnTriggerCharacters": false,         // 자동완성 트리거 문자(., :, @ 등) 입력 시 자동완성 끔
+  // "editor.tabCompletion": "on",                       // 탭 키로 자동완성 제안 선택 가능
+  "editor.snippetSuggestions": "top",                 // 스니펫 자동완성 제안이 있다면 항상 최상단에 표시
+
+  "breadcrumbs.enabled": false,                       // 에디터 상단 경로 표시(breadcrumb) 숨김
+
+  // ─── 워크벤치 UI 최소화 ───
+  "workbench.activityBar.location": "hidden",         // 좌측 액티비티 바(탐색기/검색/깃 아이콘 세로줄) 숨김
+  "workbench.editor.showTabs": "single",              // 탭 여러 개 대신 현재 파일명 하나만 표시
+  "workbench.statusBar.visible": false,               // 하단 상태바(브랜치, 줄번호, 언어모드) 숨김
+  "workbench.tips.enabled": false,                    // 시작 화면 팁/워터마크 비활성화
+
+  // ─── 파일 트리(탐색기) ───
+  "workbench.iconTheme": "material-icon-theme",       // Material 아이콘 테마 사용
+  "material-icon-theme.hidesExplorerArrows": true,    // 폴더 앞 펼침 화살표(>) 숨김
+  "workbench.tree.enableStickyScroll": false,         // 스크롤 시 상위 폴더가 상단에 붙는 기능 끔
+  "workbench.tree.renderIndentGuides": "none",        // 들여쓰기 세로 가이드선 숨김
+  "workbench.tree.indent": 8,                         // 트리 들여쓰기 폭 8px (기본값보다 좁게)
+  "explorer.compactFolders": false,                   // 단일 하위 폴더를 a/b/c로 합쳐 표시하는 기능 끔
+  "explorer.confirmDragAndDrop": false,               // 드래그로 파일 이동 시 확인창 안 띄움
+  "explorer.confirmDelete": false,                    // 파일 삭제 시 확인창 안 띄움 (휴지통으로는 감)
+
+  // ─── 창/타이틀바 ───
+  "window.zoomLevel": 1.5,                            // UI 전체 확대 배율
+  "window.customTitleBarVisibility": "never",         // VS Code 자체 커스텀 타이틀바 사용 안 함
+  "window.titleBarStyle": "native",                   // macOS 네이티브 타이틀바 방식 사용
+
+  // ─── Custom UI Style: Electron 창 옵션 ───
+  "custom-ui-style.electron": {
+    "titleBarStyle": "hiddenInset",                   // 타이틀바 숨기되 신호등 버튼은 창 안쪽에 유지
+    "trafficLightPosition": {                         // 신호등(닫기/최소화/확대) 버튼 위치
+      "x": 20,                                        // 왼쪽에서 20px
+      "y": 16                                         // 위에서 16px
+    }
+  },
+
+  // ─── Custom UI Style: CSS 스타일시트 ───
+  "custom-ui-style.stylesheet": {
+    // ─── 커맨드 팔레트 (Cmd+P / Cmd+Shift+P) ───
+    ".quick-input-widget": "top: 25vh !important",                          // 화면 25% 지점으로 내리기 (런처 느낌)
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important",   // 그림자 제거
+    ".quick-input-titlebar": "background: #100B15 !important",              // 상단 타이틀바 배경색
+    ".quick-input-list .scrollbar": "display: none",                        // 결과 목록 스크롤바 숨김
+    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",    // 호버 시 인라인 액션 아이콘 숨김
+
+    // ─── 그림자/경계선 제거 (플랫화) ───
+    ".notification-toast": "box-shadow: none !important",                   // 알림 토스트 그림자 제거
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",   // Cmd+F 검색창 플랫 + 둥근 모서리
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none", // 에디터 타이틀 하단 경계선 제거
+    ".monaco-scrollable-element > .shadow.top": "display: none",            // 스크롤 시 상단 그림자 제거
+    ".monaco-editor .scroll-decoration": "display: none",                   // 에디터 스크롤 그림자 제거
+    ".sidebar": "border: none !important",                                  // 사이드바 세로 경계선 제거
+
+    // ─── 포커스 아웃라인 제거 ───
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important", // 목록 컨테이너 테두리 제거
+    ".monaco-list-row.focused": "outline: none !important",                 // 목록 항목 포커스 테두리 제거
+
+    // ─── 사이드바 타이틀 ───
+    ".sidebar .title-label": "padding: 0 0 0 70px !important",              // 신호등 버튼 회피용 왼쪽 70px
+    ".title-actions": "display: none !important",                           // 사이드바 상단 ··· 버튼 숨김
+
+    // ─── 에디터 타이틀 (탭 숨김 모드) ───
+    ".title .monaco-icon-label:after": "margin-right: 0",                   // 수정됨 표시 여백 정리
+   ".monaco-workbench.nosidebar.noauxiliarybar .title .monaco-icon-label.file-icon": "justify-content: center; margin: 0 60px; padding: 0 !important", // 양쪽 다 닫힘 → 중앙 정렬
+    ".monaco-workbench:not(.nosidebar) .title .monaco-icon-label.file-icon": "justify-content: flex-start; margin: 0; padding: 0 0 0 16px !important", // 왼쪽 사이드바 열림 → 왼쪽에 딱 붙이기
+    ".monaco-workbench.nosidebar:not(.noauxiliarybar) .title .monaco-icon-label.file-icon": "justify-content: flex-start; margin: 0; padding: 0 0 0 70px !important", // 오른쪽 패널만 열림 → 왼쪽 정렬 + 신호등 회피 70px
+
+    // ─── 커서 ───
+    // ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #59a4f9 10%, #3994bc 100%)", // 하늘색→테마 블루 그라데이션 커서
+  },
+
+  // ─── UI 폰트 ───
+  "custom-ui-style.font.sansSerif": "Dark Mono",      // 워크벤치 UI 전체 폰트(사이드바, 팔레트, 메뉴 등)를 Dark Mono로 교체 (코드 영역 아님)
+
+  // ─── 채팅 패널 ───
+  "chat.viewSessions.orientation": "stacked",         // 채팅(Copilot 등) 세션 목록을 가로 배치 대신 세로로 쌓아서 표시
+
+  // ─── 커서/멀티커서 ───
+  "editor.multiCursorModifier": "ctrlCmd",            // 멀티 커서 추가 키를 Cmd+클릭으로 (기본값 Option+클릭에서 변경, Option+클릭은 정의로 이동이 됨)
+  "editor.cursorBlinking": "solid",                   // 커서 깜빡임 끄기 (항상 켜져 있음)
+  // "editor.cursorStyle": "block",                      // 커서를 세로줄(line) 대신 블록(■)으로 — Vim normal 모드 스타일
+
+  // ─── 테마 색 오버라이드 ───
+  "workbench.colorCustomizations": {
+      "editorCursor.background": "#000000",         // 블록 커서가 글자 위에 있을 때 그 글자 색을 검정으로 (블록 배경과 대비용)
+  },
+
+  // ─── 파일 저장 시 자동 처리 ───
+  "files.trimTrailingWhitespace": true,               // 파일 저장 시 줄 끝 공백 자동 제거
+  "files.insertFinalNewline": true,                   // 파일 저장 시 마지막 줄에 자동으로 새 줄 삽입
+  "files.autoSave": "afterDelay",                     // 파일 저장 시 자동 저장 (편집 후 1000ms 지연)
+  "update.mode": "none",                              // VS Code 자체 업데이트 끔 (업데이트 알림도 안 뜸)
+  "extensions.ignoreRecommendations": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }, // 확장 추천 알림 끔
+
+  // "terminal.integrated.defaultLocation": "editor"     // 터미널 위치를 하단 패널 대신 에디터 영역으로
+
+}
